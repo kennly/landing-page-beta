@@ -1,0 +1,21 @@
+{
+  "name": "LandingP",
+  "version": "1.0.0",
+  "homepage": "https://github.com/kennly/",
+  "author": "Kenneth",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "grunt": "~0.4.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "jshint": "^2.9.2",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^1.7.2"
+  }
+}

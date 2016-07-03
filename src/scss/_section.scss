@@ -1,0 +1,28 @@
+#parallax{
+  padding:80px 25px;
+  background-size: cover;
+  min-width:100%;
+}
+
+#parallax1{
+  @extend #parallax;
+  background:  transparent url(../img/parallax1.jpg) center no-repeat;
+}
+
+#parallax2{
+  @extend #parallax;
+  background:  url(../img/parallax2.jpg) center no-repeat;
+}
+
+#parallax3{
+  @extend #parallax;
+  background:  url(../img/parallax3.jpg) center no-repeat;
+}
+
+.inner{
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+}

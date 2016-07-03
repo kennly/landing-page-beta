@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Landing Page</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+
+	<!-- Theme CSS -->
+	<!-- <link href="css/creative.min.css" rel="stylesheet"> -->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+
+</head>
+
+<body>
+
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+							</button>
+							<a class="navbar-brand page-scroll" href="#page-top">LOGO HERE</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+									<li>
+											<a class="page-scroll button download" href="#download">Download The App</a>
+									</li>
+							</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+	</nav>
+
+	<!-- Video Markup -->
+	<section class="vBackground">
+		<video class="vBackground-video" autoplay loop muted poster="im/poster.jpg">
+			<source src="videos/Blue.webm" type="video/webm">
+		</video>
+
+				<div class="play-button">
+					<svg class="playbutton" width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+							<g id="vanity-google-store-copy" sketch:type="MSArtboardGroup" transform="translate(-657.000000, -354.000000)">
+								<g id="playbutton" sketch:type="MSLayerGroup" transform="translate(658.000000, 355.000000)">
+									<circle id="playstroke" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.2" fill="#000000" sketch:type="MSShapeGroup" cx="43" cy="43" r="43"></circle>
+									<polygon id="Triangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(47.000000, 43.000000) rotate(90.000000) translate(-47.000000, -43.000000) " points="47 29 61 57 33 57 "></polygon>
+								</g>
+							</g>
+						</g>
+					</svg>
+		</div>
+
+		<div class="vBackground-overlay"></div>
+		<div class="vBackground-arrow startchange"></div>
+		<!-- <h1 id="startchange">Landing Page<span>Video in Background</span></h1> -->
+
+	</section>
+
+	<!-- parallax -->
+
+	<section id="parallax1" >
+		<div class="inner">
+
+        <h2>Access tasks everywhere</h2>
+        <p>
+            With apps and extensions for 10+ platforms, your tasks are always there: on mobile devices, web browsers, inboxes, and more.
+        </p>
+
+    </div>
+	</section>
+
+	<section id="parallax2">
+	</section>
+
+	<section id="parallax3">
+	</section>
+
+
+	<!-- Load Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="js/covervid.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/myScripts.js"></script>
+
+
+	<script type="text/javascript">
+		//jquery
+			// $('.vBackground-video').coverVid(1920, 1080);
+		// native script
+			coverVid(document.querySelector('.vBackground-video'), 640, 360);
+	</script>
+
+</body>
+
+</html>

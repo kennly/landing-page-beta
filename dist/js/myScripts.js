@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=0,e=$(".startchange"),n=e.offset();e.length&&$(document).scroll(function(){a=$(this).scrollTop(),a>n.top?$(".navbar-default").addClass("changed"):$(".navbar-default").removeClass("changed")})});
