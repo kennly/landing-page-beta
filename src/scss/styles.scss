@@ -1,5 +1,5 @@
 /**
- * vBackground
+ * videoBackground
  * -------------------------------------------------------------------------- */
 
 @import 'variable';
@@ -12,14 +12,14 @@ html {
     -webkit-font-smoothing: antialiased;
     width:100%;
 }
-.vBackground {
+.videoBackground {
     position: relative;
     min-width: 720px;
 }
-.vBackground-video {
+.videoBackground-video {
     z-index: 0;
 }
-.vBackground-overlay {
+.videoBackground-overlay {
     background-color: #000;
     opacity: 0.4;
     position: absolute;
@@ -28,7 +28,7 @@ html {
     width: 100%;
     height: 100%;
 }
-.vBackground-video-credit {
+.videoBackground-video-credit {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -46,13 +46,13 @@ html {
     -moz-transition: 0.2s ease all;
     transition: 0.2s ease all;
 }
-.vBackground-video-credit span {
+.videoBackground-video-credit span {
     display: block;
 }
-.vBackground-video-credit:hover {
+.videoBackground-video-credit:hover {
     opacity: 1;
 }
-.vBackground-arrow {
+.videoBackground-arrow {
     position: absolute;
     bottom: 25px;
     left: 0;

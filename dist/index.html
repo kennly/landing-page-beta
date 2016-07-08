@@ -59,13 +59,13 @@
 	</nav>
 
 	<!-- Video Markup -->
-	<section class="vBackground">
-		<video class="vBackground-video" autoplay loop muted poster="im/poster.jpg">
+	<section class="videoBackground">
+		<video class="videoBackground-video" autoplay loop muted poster="im/poster.jpg">
 			<source src="videos/Blue.webm" type="video/webm">
 		</video>
 
-				<div class="play-button">
-					<svg class="playbutton" width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+				<div class="videoBackground-button">
+					<svg class="videoBackground-button_playbutton" width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
 							<g id="vanity-google-store-copy" sketch:type="MSArtboardGroup" transform="translate(-657.000000, -354.000000)">
 								<g id="playbutton" sketch:type="MSLayerGroup" transform="translate(658.000000, 355.000000)">
@@ -77,8 +77,8 @@
 					</svg>
 		</div>
 
-		<div class="vBackground-overlay"></div>
-		<div class="vBackground-arrow startchange"></div>
+		<div class="videoBackground-overlay"></div>
+		<div class="videoBackground-arrow startchange"></div>
 		<!-- <h1 id="startchange">Landing Page<span>Video in Background</span></h1> -->
 
 	</section>
@@ -86,20 +86,28 @@
 	<!-- parallax -->
 
 	<section id="parallax1" >
-		<div class="inner">
+		<div class="parallax1-text">
 
-        <h2>Access tasks everywhere</h2>
-        <p>
-            With apps and extensions for 10+ platforms, your tasks are always there: on mobile devices, web browsers, inboxes, and more.
-        </p>
+	        <h2>Access tasks everywhere</h2>
+	        <p>
+	            With apps and extensions for 10+ platforms, your tasks are always there: on mobile devices, web browsers, inboxes, and more.
+	        </p>
 
-    </div>
+    	</div>
 	</section>
 
 	<section id="parallax2">
+		<div class="parallax2-text">
+
+			<h2>Access tasks everywhere</h2>
+			<p>
+				With apps and extensions for 10+ platforms, your tasks are always there: on mobile devices, web browsers, inboxes, and more.
+			</p>
+
+		</div>
 	</section>
 
-	<section id="parallax3">
+	<section id="parallax-3">
 	</section>
 
 
@@ -113,9 +121,9 @@
 
 	<script type="text/javascript">
 		//jquery
-			// $('.vBackground-video').coverVid(1920, 1080);
+			// $('.videoBackground-video').coverVid(1920, 1080);
 		// native script
-			coverVid(document.querySelector('.vBackground-video'), 640, 360);
+			coverVid(document.querySelector('.videoBackground-video'), 640, 360);
 	</script>
 
 </body>

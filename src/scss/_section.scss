@@ -7,22 +7,36 @@
 #parallax1{
   @extend #parallax;
   background:  transparent url(../img/parallax1.jpg) center no-repeat;
+  height:100vh;
+
+  .parallax1-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+  }
 }
 
 #parallax2{
   @extend #parallax;
   background:  url(../img/parallax2.jpg) center no-repeat;
+  height:100vh;
+
+
+  .parallax2-text{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    max-width: 500px;
+  }
 }
 
-#parallax3{
+#parallax-3{
   @extend #parallax;
   background:  url(../img/parallax3.jpg) center no-repeat;
 }
 
-.inner{
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 500px;
-}
+

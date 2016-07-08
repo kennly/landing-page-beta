@@ -1,5 +1,5 @@
 /**
- * vBackground
+ * videoBackground
  * -------------------------------------------------------------------------- */
 /** Variables section**/
 #mainNav {
@@ -31,11 +31,11 @@
 .changed {
   background-color: #262626 !important; }
 
-.vBackground-video {
+.videoBackground-video {
   position: relative;
   z-index: -1 !important; }
 
-.playbutton {
+.videoBackground-button_playbutton {
   color: #fff;
   position: absolute;
   top: 50%;
@@ -43,40 +43,48 @@
   transform: translate(-50%, -50%);
   z-index: 1; }
 
-#parallax, #parallax1, #parallax2, #parallax3 {
+#parallax, #parallax1, #parallax2, #parallax-3 {
   padding: 80px 25px;
   background-size: cover;
   min-width: 100%; }
 
 #parallax1 {
-  background: transparent url(../img/parallax1.jpg) center no-repeat; }
+  background: transparent url(../img/parallax1.jpg) center no-repeat;
+  height: 100vh; }
+  #parallax1 .parallax1-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px; }
 
 #parallax2 {
-  background: url(../img/parallax2.jpg) center no-repeat; }
+  background: url(../img/parallax2.jpg) center no-repeat;
+  height: 100vh; }
+  #parallax2 .parallax2-text {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    max-width: 500px; }
 
-#parallax3 {
+#parallax-3 {
   background: url(../img/parallax3.jpg) center no-repeat; }
-
-.inner {
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 500px; }
 
 html {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   width: 100%; }
 
-.vBackground {
+.videoBackground {
   position: relative;
   min-width: 720px; }
 
-.vBackground-video {
+.videoBackground-video {
   z-index: 0; }
 
-.vBackground-overlay {
+.videoBackground-overlay {
   background-color: #000;
   opacity: 0.4;
   position: absolute;
@@ -87,7 +95,7 @@ html {
   width: 100%;
   height: 100%; }
 
-.vBackground-video-credit {
+.videoBackground-video-credit {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -105,13 +113,13 @@ html {
   -moz-transition: 0.2s ease all;
   transition: 0.2s ease all; }
 
-.vBackground-video-credit span {
+.videoBackground-video-credit span {
   display: block; }
 
-.vBackground-video-credit:hover {
+.videoBackground-video-credit:hover {
   opacity: 1; }
 
-.vBackground-arrow {
+.videoBackground-arrow {
   position: absolute;
   bottom: 25px;
   left: 0;
