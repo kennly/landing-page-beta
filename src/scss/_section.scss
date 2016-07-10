@@ -1,7 +1,17 @@
 #parallax{
-  padding:80px 25px;
   background-size: cover;
   min-width:100%;
+  opacity: 0;
+  transition: all 2s ease-out;
+
+}
+
+.parallax-text_left{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
 }
 
 #parallax1{
@@ -9,13 +19,11 @@
   background:  transparent url(../img/parallax1.jpg) center no-repeat;
   height:100vh;
 
+
   .parallax1-text{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 500px;
+    @extend .parallax-text_left;
   }
+
 }
 
 #parallax2{
@@ -27,16 +35,40 @@
   .parallax2-text{
     height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-end;
+    margin-left: auto;
+    margin-top: auto;
+    flex-direction: column;
+    justify-content: center;
     max-width: 500px;
   }
 }
 
-#parallax-3{
+#parallax3{
   @extend #parallax;
   background:  url(../img/parallax3.jpg) center no-repeat;
+  height:100vh;
+
+  .parallax3-text{
+      @extend .parallax-text_left;
+  }
 }
 
+#parallax4{
+  @extend #parallax;
+  background:  url(../img/parallax4.jpg) center no-repeat;
+  position: relative;
+  height:100vh;
 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .parallax4-text{
+    max-width: 50%;
+    p{
+      color:#fff;
+    }
+  }
+
+}

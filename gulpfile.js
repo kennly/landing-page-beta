@@ -12,6 +12,8 @@ gulp.task("compress", function(){
           .pipe(gulp.dest('dist/js/'))
 })
 
+gulp.task('js-watch', ['compress'], browserSync.reload);
+
 gulp.task("sass", function() {
   gulp.src("src/scss/**/*.scss")
       .pipe(plumber())
@@ -36,7 +38,8 @@ gulp.task("browserSync", function() {
 
 gulp.task("watch", ["browserSync", "sass", "compress"], function() {
   gulp.watch("src/scss/**/*.scss", ["sass"]);
-  gulp.watch("src/js/**/*.scss", ["compress"]);
+  gulp.watch("src/js/**/*.js", ["compress"]);
+  gulp.watch("src/js/**/*.js", ["js-watch"]);
   gulp.watch("dist/*.html").on("change", browserSync.reload);
 
 });

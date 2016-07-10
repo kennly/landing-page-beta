@@ -6,6 +6,8 @@
 @import 'navigation';
 @import 'video';
 @import 'section';
+@import 'form';
+@import 'scroll';
 
 html {
     font-family: 'Lato', sans-serif;
@@ -69,17 +71,15 @@ html {
     opacity: 0.4;
 }
 h1 {
-    position: absolute;
     width: 100%;
     font-weight: 700;
     font-size: 110px;
     text-align: center;
     height: 120px;
     line-height: 1;
-    top: 0;
-    bottom: 0;
-    margin: auto;
     color: #fff;
+    position:absolute;
+    top:0px;
 }
 h1 span {
     display: block;
