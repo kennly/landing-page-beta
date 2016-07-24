@@ -28,7 +28,7 @@ TweenMax.set("#parallax1-text", {left: "-=100"});
 var $box = $("#parallax1-text h2");
 
             var tween = new TimelineMax()
-          		.to("$(#parallax1-text)", 1, {top: "-=200",
+          		.to("$('#parallax1-text')", 1, {top: "-=200",
           				onStart: function () {$box.html("This");},
           				onReverseComplete: function () {$box.html("Let's draw!");}
           			}

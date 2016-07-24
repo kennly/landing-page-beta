@@ -17,6 +17,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
 
+	<!-- Intl Css CSS -->
+	<link rel="stylesheet" href="css/intlTelInput.css" />
+
 	<!-- Theme CSS -->
 	<!-- <link href="css/creative.min.css" rel="stylesheet"> -->
 
@@ -32,8 +35,6 @@
 
 	<script src="js/jquery_image_quickview.js"></script>
 	<link rel="stylesheet" href="css/modal.css" />
-
-
 
 
 </head>
@@ -134,7 +135,9 @@
 		</div>
 
 		<form id="signup-form" method="post" action="#">
-			<input type="email" name="email" id="email" placeholder="Email Address" />
+			<input id="phone" type="tel" name="phoneNumber"  />
+			<span id="valid-msg" class="hide">✓ Valid</span>
+			<span id="error-msg" class="hide">Invalid number</span>
 			<button type="submit">Sign Up</button>
 		</form>
 
@@ -143,6 +146,8 @@
 	<!-- Load Scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="js/intlTelinput.js"></script>
+	<script src="js/phoneInput.js"></script>
 	<script src="js/covervid.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/myScripts.js"></script>
