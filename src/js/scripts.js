@@ -1,6 +1,8 @@
 fullscreen();
 $(window).resize(fullscreen);
 $(window).scroll(headerParallax);
+MediaBox('.mediabox');
+
 
 function fullscreen() {
 	var videoBackground = $('.videoBackground');
