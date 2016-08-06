@@ -2,7 +2,9 @@
  * videoBackground
  * -------------------------------------------------------------------------- */
 
+@import '../../node_modules/breakpoint-sass/stylesheets/_breakpoint';
 @import 'variable';
+@import 'mixin';
 @import 'navigation';
 @import 'video';
 @import 'section';
@@ -15,6 +17,7 @@ html {
     -webkit-font-smoothing: antialiased;
     width:100%;
 }
+
 .videoBackground {
     position: relative;
     min-width: 720px;

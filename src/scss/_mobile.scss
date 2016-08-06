@@ -1,5 +1,8 @@
-@media only screen and (max-width: 479px) and (min-width: 0px){
-  .videoBackground-video {
-      display:none !important;
+@include respond-to('small'){
+  .navbar-toggle{
+    padding: 0px !important;
+  }
+  .parallax1-text h2{
+    font-size: 10px !important;
   }
 }

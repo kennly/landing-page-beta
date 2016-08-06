@@ -7,7 +7,7 @@ $(document).ready(function(){
   $('.parallax_scroll').each(function(){
     var ourScene = new ScrollMagic.Scene({
       triggerElement: this,
-      triggerHook: 0.7
+      triggerHook: 1.1
     })
     .setClassToggle(this, 'fadeIn')
     .addIndicators({
